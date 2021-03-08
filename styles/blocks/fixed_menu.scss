@@ -1,9 +1,3 @@
-// $containerWidth: 940px;
-// $baseFontSize: 18px;
-
-// $red: #E01F3D; 
-// $lightGrey: #F8FAF9;
-
 .fixed-menu {
     position: fixed;
     top: 20%;
@@ -40,7 +34,6 @@
 
     &_active {
         .fixed-menu__link {
-            // background-color: green;
             border: 1px solid $red;
             opacity: 1;
 

@@ -7,7 +7,7 @@ $lightGrey: #F8FAF9;
     position: relative;
 
     &:before {
-        content: url('../../images/decor/rectangle.png');
+        content: url('../images/decor/rectangle.png');
         position: absolute;
         left: 90%;
         bottom: -25px;
@@ -23,7 +23,7 @@ $lightGrey: #F8FAF9;
     height: 100%;
     padding: 25px 82px 70px;
 
-    background-image: url('../../images/main/headphones.png');
+    background-image: url('../images/main/headphones.png');
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 40% auto;

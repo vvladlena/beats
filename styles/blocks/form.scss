@@ -74,7 +74,11 @@
 
 
             &::before {
+<<<<<<< HEAD
+                background: url('../images/decor/bird.png') center center no-repeat;
+=======
                 background: url('./images/decor/bird.png') center center no-repeat;
+>>>>>>> df6cacb7e42ff90342333d88ae6ee57487415dcf
             }
         }
     }
