@@ -1,0 +1,54 @@
+$lightGrey: #F8FAF9;
+
+.intro {
+    background-color: $lightGrey;
+    height: 100vh; //высоты браузера
+    min-height: 652px;
+    position: relative;
+
+    &:before {
+        content: url('../../images/decor/rectangle.png');
+        position: absolute;
+        left: 90%;
+        bottom: -25px;
+    }
+
+}
+
+
+.intro__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 25px 82px 70px;
+
+    background-image: url('../../images/main/headphones.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 40% auto;
+}
+
+.intro__section {
+    width: 40%;
+}
+
+
+
+.intro__tittle {
+    font-size: 48px;
+    color: #292929;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    line-height: 1.1;
+
+}
+
+.intro__text {
+    font-size: 21px;
+    margin-bottom: 36px;
+    padding-right: 10%;
+    font-family: $secondaryFontFamily;
+
+}

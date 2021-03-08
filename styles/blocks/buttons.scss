@@ -1,0 +1,22 @@
+.button {
+    border-radius: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: 17px 39px;
+    border: none;
+
+    &_style_common {
+        background: $red;
+        color: #fff;
+    }
+
+    &_style_uncommon {
+        color: #fff;
+        background: transparent;
+        text-transform: none;
+    }
+
+}

@@ -1,0 +1,51 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+$red: #E01F3D;
+
+$lightGrey: #F8FAF9;
+
+$z-fixed-menu: 100%;
+
+$baseFontFamily:'Play', sans-serif;
+$secondaryFontFamily:'Alegreya Sans', sans-serif;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,700;1,800&family=Play:wght@400;700&display=swap');
+
+@import "layout/normalize";
+
+@import "layout/base";
+
+
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/buttons";
+@import "blocks/features";
+@import "blocks/headline";
+@import "blocks/section";
+@import "blocks/headline";
+@import "blocks/advantages";
+@import "blocks/advantages_section";
+@import "blocks/reviews";
+@import "blocks/interactive_avatar";
+@import "blocks/reviews_section";
+@import "blocks/delivery_section";
+@import "blocks/delivery";
+@import "blocks/form";
+@import "blocks/fixed_menu";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

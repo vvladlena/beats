@@ -1,0 +1,70 @@
+.advantages {
+    display: flex;
+    padding: 0 82px;
+
+}
+
+.advantages__item {
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+
+    &:before {
+        content: url('../../images/decor/dots.png');
+        position: absolute;
+        top: 55px;
+        right: 0;
+        transform: translateX(50%);
+
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+
+        &:before{
+            display: none;
+        }
+    }
+}
+
+.advantage__title {
+    font-weight: bold;
+    color: #292929;
+}
+
+.advantage {
+    text-align: center;
+}
+
+.advantage__image-wrapper {
+    display: inline-block;
+    width: 126px;
+    height: 126px;
+    position: relative;
+    background: #F2F5F4;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.advantage__icon {
+    height: 68px;
+    width: 68px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+}
+
+.advantage__desc{
+    padding: 0 16px;
+    font-size: 16px;
+
+}
+
+.advantage__image{
+    margin-bottom: 25px;
+}
