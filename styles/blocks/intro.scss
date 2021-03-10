@@ -1,5 +1,3 @@
-$lightGrey: #F8FAF9;
-
 .intro {
     background-color: $lightGrey;
     height: 100vh; //высоты браузера
@@ -21,7 +19,7 @@ $lightGrey: #F8FAF9;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 25px 82px 70px;
+    padding: 25px 0 70px;
 
     background-image: url('../images/main/headphones.png');
     background-repeat: no-repeat;
@@ -30,13 +28,14 @@ $lightGrey: #F8FAF9;
 }
 
 .intro__section {
-    width: 40%;
+    width: 45%;
 }
 
 
 
 .intro__tittle {
-    font-size: 48px;
+    font-size: rem(48px);
+    // font-size: 48px;
     color: #292929;
     font-weight: bold;
     text-transform: uppercase;
@@ -46,7 +45,8 @@ $lightGrey: #F8FAF9;
 }
 
 .intro__text {
-    font-size: 21px;
+    font-size: rem(21px);
+    // font-size: 21px;
     margin-bottom: 36px;
     padding-right: 10%;
     font-family: $secondaryFontFamily;

@@ -32,6 +32,11 @@
 .fixed-menu__item {
     margin-bottom: 5px;
 
+    &:last-child {
+        margin-bottom: 0;
+
+    }
+
     &_active {
         .fixed-menu__link {
             border: 1px solid $red;
@@ -40,7 +45,8 @@
 
             &::before {
                 background: $red;
-            opacity: 1;
+                opacity: 1;
+
 
 
 

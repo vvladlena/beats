@@ -1,7 +1,7 @@
 .form {
     display: flex;
     font-size: 16px;
-    padding: 0 82px;
+    // padding: 0 82px;
 }
 
 .form__col {
@@ -41,6 +41,7 @@
         resize: none;
         border: solid 3px transparent;
         border-radius: 4px;
+        padding: 10px 0 0 10px;
 
 
         &:focus {
@@ -66,6 +67,7 @@
     display: flex;
     cursor: pointer;
     user-select: none;
+    align-items: center;
 
     &_checkbox {
         margin-bottom: 27px;
@@ -106,7 +108,7 @@
         content: '';
         width: 14px;
         height: 14px;
-        background: #E01F3D;
+        background: $red;
         border-radius: 50%;
         position: absolute;
         display: none;
@@ -119,6 +121,8 @@
 
 .radio__title {
     margin-right: 16px;
+
+
 }
 
 .form__block-comment {

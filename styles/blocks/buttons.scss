@@ -12,6 +12,11 @@
         background: $red;
         color: #fff;
     }
+    &:hover{
+        background: $red;
+        color: #fff;
+        transition: .5s;
+    }
 
     &_style_uncommon {
         color: #fff;

@@ -7,7 +7,12 @@
     position: relative;
 
     &_active {
-        border-color: #E01F3D;
+        border-color: $red;
+    }
+
+    &:hover{
+        border-color: $red;
+
     }
 }
 
