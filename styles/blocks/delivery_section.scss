@@ -1,8 +1,9 @@
 .delivery-section{
-background: #181818;
+
 position: relative;
 color: #fff;
-
+// min-width: 940px;
+// width: 100%;
 
 &:before{
 content: url('../images/decor/polygon.png');
@@ -11,4 +12,9 @@ left: 90%;
 top: -25px;
 }
 
+}
+
+.delivery__container{
+
+background: #181818;
 }

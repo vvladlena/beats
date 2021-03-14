@@ -1,5 +1,4 @@
 .intro {
-    background-color: $lightGrey;
     height: 100vh; //высоты браузера
     min-height: 652px;
     position: relative;
@@ -7,7 +6,7 @@
     &:before {
         content: url('../images/decor/rectangle.png');
         position: absolute;
-        left: 90%;
+        left: 70%;
         bottom: -25px;
     }
 
@@ -15,6 +14,7 @@
 
 
 .intro__container {
+    background-color: $lightGrey;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

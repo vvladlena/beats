@@ -320,8 +320,7 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  overflow: hidden;
-  min-width: 1100px; }
+  overflow: hidden; }
 
 a {
   color: inherit; }
@@ -352,8 +351,9 @@ p {
 
 .container {
   margin: 0 auto;
-  width: 938px;
-  position: relative; }
+  width: 960px;
+  position: relative;
+  padding: 0 10px; }
 
 img {
   display: block;
@@ -395,17 +395,17 @@ img {
   text-decoration: none; }
 
 .intro {
-  background-color: #F8FAF9;
   height: 100vh;
   min-height: 652px;
   position: relative; }
   .intro:before {
     content: url("../images/decor/rectangle.png");
     position: absolute;
-    left: 90%;
+    left: 70%;
     bottom: -25px; }
 
 .intro__container {
+  background-color: #F8FAF9;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -445,10 +445,10 @@ img {
   .button_style_common {
     background: #E01F3D;
     color: #fff; }
-  .button:hover {
-    background: #E01F3D;
-    color: #fff;
-    transition: .5s; }
+    .button_style_common:hover {
+      background: #CA1B36;
+      color: #fff;
+      transition: .5s; }
   .button_style_uncommon {
     color: #fff;
     background: transparent;
@@ -456,19 +456,19 @@ img {
 
 .features {
   display: flex;
-  align-items: start; }
+  align-items: start;
+  width: 55%; }
 
 .feature {
   display: flex;
   align-items: center;
-  width: 166px; }
-
-.feature__img {
-  width: 40px;
-  height: 40px; }
+  width: 166px;
+  flex: 1; }
 
 .feature__text {
-  padding: 11px; }
+  padding: 11px;
+  line-height: 1.1;
+  font-size: 16px; }
 
 .headline {
   display: flex;
@@ -640,7 +640,6 @@ img {
     bottom: -25px; }
 
 .delivery-section {
-  background: #181818;
   position: relative;
   color: #fff; }
   .delivery-section:before {
@@ -648,6 +647,9 @@ img {
     position: absolute;
     left: 90%;
     top: -25px; }
+
+.delivery__container {
+  background: #181818; }
 
 .section__title-delivery {
   color: #ffffff;
