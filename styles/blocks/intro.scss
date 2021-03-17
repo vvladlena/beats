@@ -2,6 +2,9 @@
     height: 100vh; //высоты браузера
     min-height: 652px;
     position: relative;
+    background-color: $lightGrey;
+
+    
 
     &:before {
         content: url('../images/decor/rectangle.png');
@@ -14,12 +17,12 @@
 
 
 .intro__container {
-    background-color: $lightGrey;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 25px 0 70px;
+    padding: 25px 10px 70px;
 
     background-image: url('../images/main/headphones.png');
     background-repeat: no-repeat;

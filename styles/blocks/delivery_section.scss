@@ -1,20 +1,17 @@
-.delivery-section{
+.delivery-section {
+    position: relative;
+    color: #fff;
+    background: #181818;
 
-position: relative;
-color: #fff;
-// min-width: 940px;
-// width: 100%;
-
-&:before{
-content: url('../images/decor/polygon.png');
-position: absolute;
-left: 90%;
-top: -25px;
-}
+    &:before {
+        content: url('../images/decor/polygon.png');
+        position: absolute;
+        left: 90%;
+        top: -25px;
+    }
 
 }
 
-.delivery__container{
-
-background: #181818;
-}
+// .delivery__container {
+//     background: #181818;
+// }

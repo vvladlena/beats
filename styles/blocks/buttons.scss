@@ -8,6 +8,7 @@
     padding: 17px 39px;
     border: none;
 
+
     &_style_common {
         background: $red;
         color: #fff;
@@ -25,4 +26,8 @@
         text-transform: none;
     }
 
+}
+
+.form__button{
+    cursor: pointer;
 }
