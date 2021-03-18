@@ -2,6 +2,10 @@
     position: relative;
     color: #fff;
     background: #181818;
+    background-image: url('../../images/decor/black.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
 
     &:before {
         content: url('../images/decor/polygon.png');
@@ -11,7 +15,3 @@
     }
 
 }
-
-// .delivery__container {
-//     background: #181818;
-// }

@@ -3,8 +3,9 @@
     min-height: 652px;
     position: relative;
     background-color: $lightGrey;
+    padding-top: 25px;
+    padding-bottom: 70px;
 
-    
 
     &:before {
         content: url('../images/decor/rectangle.png');
@@ -22,8 +23,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 25px 10px 70px;
-
     background-image: url('../images/main/headphones.png');
     background-repeat: no-repeat;
     background-position: right center;

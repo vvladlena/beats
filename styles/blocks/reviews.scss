@@ -1,16 +1,11 @@
-// .reviews{
-//     // display: flex;
-//     // flex-direction: column;
-//     // align-items: center;
-//     // padding: 0 82px;
-// }
+
 .reviews__display {
     background: #F8FAF9;
     display: flex;
     padding: 42px;
     overflow: hidden;
     position: relative;
-    //width: 940px;
+    margin-bottom: 15px;
 
 
     &:before {
