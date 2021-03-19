@@ -631,7 +631,8 @@ img {
   .interactive-avatar_active {
     border-color: #E01F3D; }
   .interactive-avatar:hover {
-    border-color: #E01F3D; }
+    border-color: #E01F3D;
+    transition: 0.5s; }
 
 .reviews__switcher {
   display: flex;
@@ -650,7 +651,7 @@ img {
   position: relative;
   color: #fff;
   background: #181818;
-  background-image: url("../../images/decor/black.png");
+  background-image: url("../images/decor/black.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% auto; }
