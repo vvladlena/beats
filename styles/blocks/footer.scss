@@ -1,0 +1,39 @@
+.map {
+    margin-bottom: rem(15px);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: rem(15px);
+
+    @include phones {
+        flex-direction: column;
+    }
+
+}
+
+.contacts-info {
+    color: #292929;
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer__contacts {
+    @include tablets {
+        color: #E01F3D;
+    }
+}
+
+.contacts__icon-img_footer {
+    fill: #292929;
+
+    @include tablets {
+        fill: #E01F3D;
+    }
+}

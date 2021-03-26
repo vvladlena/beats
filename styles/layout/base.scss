@@ -1,16 +1,21 @@
+html {
+    font-size: $baseFontSize;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+
+    @include phones {
+        font-size: $baseFontSize - 2px;
+    }
+
+}
 
 body {
     font-family: $baseFontFamily;
-    font-size: $baseFontSize;
     line-height: 1.42;
     margin: 0 auto;
     color: #666666;
-}
-
-body,
-html {
-    height: 100%;
-    font-size: $baseFontSize;
 }
 
 .wraper {
@@ -18,7 +23,7 @@ html {
     flex-direction: column;
     min-height: 100%;
     overflow: hidden;
- 
+
 }
 
 a {
@@ -58,18 +63,15 @@ p {
 }
 
 .container {
+    width: 95%;
     margin: 0 auto;
-    width: 960px;
+    max-width: rem(960px);
     position: relative;
-    padding: 0 10px;
+    padding: 0 rem(10px);
 }
 
 
-img{
+img {
     display: block;
     width: 100%;
 }
-
-
-
-

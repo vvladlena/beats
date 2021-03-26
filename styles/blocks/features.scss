@@ -8,18 +8,23 @@
 .feature {
     display: flex;
     align-items: center;
-    width: 166px;
+    width: rem(166px);
     // flex: 1;
 }
 
 
 .feature__text {
-    padding: 11px;
+    padding: rem(11px);
     line-height: 1.1;
-    font-size: 16px;
+    font-size: rem(16px);
 
 }
 
-.feature__icon{
+.feature__icon {
     flex-shrink: 0;
+}
+
+.feature__img {
+    max-width: 41px;
+    max-height: 41px;
 }

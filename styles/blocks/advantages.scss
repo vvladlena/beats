@@ -1,6 +1,11 @@
 .advantages {
     display: flex;
-    // padding: 0 82px;
+    // padding: 0 rem(82px);
+
+    @include phones {
+        flex-direction: column;
+
+    }
 
 }
 
@@ -9,12 +14,25 @@
     padding: 0 3%;
     position: relative;
 
+    @include phones {
+        margin-bottom: rem(25px);
+        display: flex;
+        padding: 0;
+
+    }
+
+
+
     &:before {
         content: url('../images/decor/dots.png');
         position: absolute;
-        top: 55px;
+        top: rem(55px);
         right: 0;
         transform: translateX(50%);
+
+        @include phones {
+            display: none;
+        }
 
     }
 
@@ -25,7 +43,7 @@
     &:last-child {
         padding-right: 0;
 
-        &:before{
+        &:before {
             display: none;
         }
     }
@@ -34,6 +52,12 @@
 .advantage__title {
     font-weight: bold;
     color: #292929;
+
+    @include phones {
+        padding: 0 rem(16px);
+
+    }
+
 }
 
 .advantage {
@@ -42,8 +66,8 @@
 
 .advantage__image-wrapper {
     display: inline-block;
-    width: 126px;
-    height: 126px;
+    width: rem(126px);
+    height: rem(126px);
     position: relative;
     background: #F2F5F4;
     border-radius: 50%;
@@ -51,20 +75,31 @@
 }
 
 .advantage__icon {
-    height: 68px;
-    width: 68px;
+    height: rem(68px);
+    width: rem(68px);
     position: absolute;
     top: 25%;
     left: 25%;
     text-align: center;
 }
 
-.advantage__desc{
-    padding: 0 16px;
-    font-size: 16px;
+.advantage__desc {
+    padding: 0 rem(16px);
+    font-size: rem(16px);
 
 }
 
-.advantage__image{
-    margin-bottom: 25px;
+.advantage__image {
+    margin-bottom: rem(25px);
+
+    @include phones {
+        margin-bottom: 0;
+    }
+}
+
+.advantage__text {
+    @include phones {
+        text-align: left;
+
+    }
 }

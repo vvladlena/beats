@@ -1,24 +1,36 @@
 .intro {
     height: 100vh; //высоты браузера
-    min-height: 652px;
+    min-height: rem(652px);
     position: relative;
     background-color: $lightGrey;
-    padding-top: 25px;
-    padding-bottom: 70px;
+    padding-top: rem(25px);
+    padding-bottom: rem(70px);
 
+ 
+
+
+    x &:after {
+        @include tablets {
+            display: none;
+        }
+    }
 
     &:before {
         content: url('../images/decor/rectangle.png');
         position: absolute;
         left: 70%;
-        bottom: -25px;
+        bottom: rem(-25px);
+
+        @include tablets {
+            left: 85%;
+
+        }
     }
 
 }
 
 
 .intro__container {
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -27,30 +39,74 @@
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 40% auto;
+
+    @include tablets {
+        background-image: none;
+    }
 }
 
 .intro__section {
     width: 45%;
-}
 
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &:before {
+            content: url('../images/tablets/headphones.png');
+            margin-bottom: 40px;
+            // width: rem(323px);
+            // height: rem(323px);
+            // background: url('../images/tablets/headphones.png') center center contain/no-repeat;
+        }
+    }
+}
 
 
 .intro__tittle {
     font-size: rem(48px);
-    // font-size: 48px;
+    // font-size: rem(48px);
     color: #292929;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 22px;
+    margin-bottom: rem(22px);
     line-height: 1.1;
+
+    @include tablets {
+        padding: 0 5%;
+    }
+
+   
 
 }
 
 .intro__text {
     font-size: rem(21px);
-    // font-size: 21px;
-    margin-bottom: 36px;
+    margin-bottom: rem(36px);
     padding-right: 10%;
     font-family: $secondaryFontFamily;
 
+   
+
+    @include tablets {
+        padding: 0 25%;
+    }
+
+    @include phones {
+        padding: 0 16%;
+    }
+
+   
+
+}
+
+.intro__features {
+    @include tablets {
+        display: none;
+    }
 }

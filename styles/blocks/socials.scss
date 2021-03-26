@@ -1,0 +1,31 @@
+.socials{
+    margin-left: auto;
+    @include phones{
+        margin-left: 0;
+    }
+}
+
+.socials__item {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.socials__list {
+    display: flex;
+}
+
+.socials__img {
+    max-width: 100%;
+    max-height: 100%;
+    fill: #B3B3B3;
+    transition: 0.3s;
+
+    &:hover {
+        fill: #000000;
+    }
+}
