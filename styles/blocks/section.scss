@@ -13,8 +13,9 @@
     text-align: center;
     text-transform: uppercase;
     color: #292929;
-}
 
-// section{
-//     width: rem(1100px);
-// }
+    @include phones{
+    font-size: rem(32px);
+        
+    }
+}

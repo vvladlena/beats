@@ -1,6 +1,6 @@
 .features {
     display: flex;
-    align-items: start;
+    align-items: center;
     width: 55%;
 
 }
@@ -8,8 +8,8 @@
 .feature {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: rem(166px);
-    // flex: 1;
 }
 
 

@@ -1,13 +1,9 @@
 .intro {
-    height: 100vh; //высоты браузера
     min-height: rem(652px);
     position: relative;
     background-color: $lightGrey;
     padding-top: rem(25px);
     padding-bottom: rem(70px);
-
- 
-
 
     x &:after {
         @include tablets {
@@ -46,8 +42,8 @@
 }
 
 .intro__section {
-    width: 45%;
-
+    width: 50%;
+    
     @include tablets {
         width: 100%;
         flex: 1;
@@ -59,7 +55,7 @@
 
         &:before {
             content: url('../images/tablets/headphones.png');
-            margin-bottom: 40px;
+            margin-bottom: rem(40px);
             // width: rem(323px);
             // height: rem(323px);
             // background: url('../images/tablets/headphones.png') center center contain/no-repeat;
@@ -81,7 +77,6 @@
         padding: 0 5%;
     }
 
-   
 
 }
 

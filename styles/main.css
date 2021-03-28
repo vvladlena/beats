@@ -356,8 +356,7 @@ p {
   width: 95%;
   margin: 0 auto;
   max-width: 53.3333333333rem;
-  position: relative;
-  padding: 0 0.5555555556rem; }
+  position: relative; }
 
 img {
   display: block;
@@ -372,6 +371,10 @@ img {
 .logo {
   margin-right: 1.1111111111rem;
   flex-shrink: 0; }
+
+.logo__img {
+  width: 2.2222222222rem;
+  height: 2.2222222222rem; }
 
 .contacts {
   text-decoration: none;
@@ -390,7 +393,7 @@ img {
 .general-menu {
   font-size: 18px;
   font-family: "Alegreya Sans", sans-serif;
-  margin: 0 20px; }
+  margin: 0 1.1111111111rem; }
   @media screen and (max-width: 768px) {
     .general-menu {
       display: none; } }
@@ -403,7 +406,7 @@ img {
 
 .general-menu__item {
   margin-right: 1.9444444444rem;
-  margin-bottom: 10px; }
+  margin-bottom: 0.5555555556rem; }
   .general-menu__item:last-child {
     margin-right: 0; }
 
@@ -416,7 +419,6 @@ img {
     display: none; } }
 
 .intro {
-  height: 100vh;
   min-height: 36.2222222222rem;
   position: relative;
   background-color: #F8FAF9;
@@ -448,7 +450,7 @@ img {
       background-image: none; } }
 
 .intro__section {
-  width: 45%; }
+  width: 50%; }
   @media screen and (max-width: 768px) {
     .intro__section {
       width: 100%;
@@ -460,7 +462,7 @@ img {
       text-align: center; }
       .intro__section:before {
         content: url("../images/tablets/headphones.png");
-        margin-bottom: 40px; } }
+        margin-bottom: 2.2222222222rem; } }
 
 .intro__tittle {
   font-size: 2.6666666667rem;
@@ -519,12 +521,13 @@ img {
 
 .features {
   display: flex;
-  align-items: start;
+  align-items: center;
   width: 55%; }
 
 .feature {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 9.2222222222rem; }
 
 .feature__text {
@@ -568,6 +571,9 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #292929; }
+  @media screen and (max-width: 480px) {
+    .section__title {
+      font-size: 1.7777777778rem; } }
 
 .headline {
   display: flex;
@@ -606,6 +612,9 @@ img {
     right: 0;
     transform: translateX(50%); }
     @media screen and (max-width: 480px) {
+      .advantages__item:before {
+        display: none; } }
+    @media screen and (max-width: 768px) {
       .advantages__item:before {
         display: none; } }
   .advantages__item:first-child {
@@ -657,7 +666,8 @@ img {
     text-align: left; } }
 
 .advantages-section {
-  position: relative; }
+  position: relative;
+  height: 100vh; }
   .advantages-section:before {
     content: url("../images/decor/triangle.png");
     position: absolute;
@@ -762,7 +772,8 @@ img {
   background-image: url("../images/decor/black.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% auto; }
+  background-size: 100% auto;
+  height: 100vh; }
   .delivery-section:before {
     content: url("../images/decor/polygon.png");
     position: absolute;
@@ -813,6 +824,7 @@ img {
   .form__input_textarea {
     height: 8.4444444444rem;
     width: 25rem;
+    width: 100%;
     resize: none;
     border: solid 0.1666666667rem transparent;
     border-radius: 0.2222222222rem;
@@ -836,7 +848,8 @@ img {
   display: flex;
   cursor: pointer;
   user-select: none;
-  align-items: center; }
+  align-items: center;
+  padding: 1px; }
   .radio_checkbox {
     margin-bottom: 1.5rem; }
     .radio_checkbox .radio__visible {
@@ -886,6 +899,9 @@ img {
   top: 20%;
   right: 3%;
   z-index: 100%; }
+  @media screen and (max-width: 768px) {
+    .fixed-menu {
+      display: none; } }
 
 .fixed-menu__link {
   width: 0.8888888889rem;
@@ -958,6 +974,9 @@ img {
   .socials__img:hover {
     fill: #000000; }
 
+.bottom__section {
+  max-height: 100vh; }
+
 .map {
   margin-bottom: 0.8333333333rem; }
 
@@ -976,14 +995,24 @@ img {
     .contacts-info {
       display: flex;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      margin-bottom: 1.0555555556rem; } }
+
+.adress {
+  margin-bottom: 0.6666666667rem; }
 
 @media screen and (max-width: 768px) {
   .footer__contacts {
     color: #E01F3D; } }
+@media screen and (max-width: 480px) {
+  .footer__contacts {
+    color: #292929; } }
 
 .contacts__icon-img_footer {
   fill: #292929; }
   @media screen and (max-width: 768px) {
     .contacts__icon-img_footer {
       fill: #E01F3D; } }
+  @media screen and (max-width: 480px) {
+    .contacts__icon-img_footer {
+      fill: #292929; } }

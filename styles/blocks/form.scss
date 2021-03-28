@@ -8,7 +8,7 @@
         padding: 0 17%;
     }
 
-    @include phones{
+    @include phones {
         padding: 0;
     }
 }
@@ -29,11 +29,19 @@
 .form__row {
     display: flex;
     margin-bottom: rem(11px);
+    // flex-wrap: wrap;
+    // flex-grow: 4;
+    // flex-basis: 125px;
+    
+
 }
 
 .form__block {
     flex: 1;
     margin-right: rem(20px);
+    // flex-shrink: 1;
+    // flex-basis: 106px;
+
 
     &:last-child {
         margin-right: 0;
@@ -51,6 +59,7 @@
     &_textarea {
         height: rem(152px);
         width: rem(450px);
+        width: 100%;
         resize: none;
         border: solid rem(3px) transparent;
         border-radius: rem(4px);
@@ -74,7 +83,7 @@
     flex-wrap: wrap;
     margin-bottom: rem(19px);
 
-    @include phones{
+    @include phones {
         justify-content: center;
     }
 }
@@ -84,6 +93,7 @@
     cursor: pointer;
     user-select: none;
     align-items: center;
+    padding: 1px;
 
     &_checkbox {
         margin-bottom: rem(27px);

@@ -1,3 +1,7 @@
+.bottom__section{
+    max-height: 100vh;
+}
+
 .map {
     margin-bottom: rem(15px);
 }
@@ -21,12 +25,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: rem(19px);
     }
 }
 
+.adress{
+    margin-bottom: rem(12px);
+}
+
 .footer__contacts {
+
     @include tablets {
         color: #E01F3D;
+    }
+
+    @include phones {
+        color: #292929;
     }
 }
 
@@ -36,4 +50,9 @@
     @include tablets {
         fill: #E01F3D;
     }
+@include phones{
+    fill: #292929;
+
+}
+
 }

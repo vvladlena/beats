@@ -4,7 +4,6 @@
 
     @include phones {
         flex-direction: column;
-
     }
 
 }
@@ -22,7 +21,6 @@
     }
 
 
-
     &:before {
         content: url('../images/decor/dots.png');
         position: absolute;
@@ -31,6 +29,9 @@
         transform: translateX(50%);
 
         @include phones {
+            display: none;
+        }
+        @include tablets {
             display: none;
         }
 
