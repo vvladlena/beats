@@ -5,19 +5,28 @@
     text-decoration: none;
     display: inline-block;
     font-size: rem(14px);
-    padding:  rem(21px) rem(47px);
+    padding: rem(21px) rem(47px);
     border: none;
+
 
     &_style_common {
         background: $red;
         color: #fff;
-        &:hover{
+
+        &:hover {
             background: $redHover;
             color: #fff;
             transition: .5s;
         }
+
+
+
+        @include phones {
+            font-size: rem(19px);
+
+        }
     }
-   
+
 
     &_style_uncommon {
         color: #fff;
@@ -25,13 +34,13 @@
         text-transform: none;
         font-weight: normal;
 
-        @include tablets{
-            color:#E01F3D;
+        @include tablets {
+            color: #E01F3D;
         }
     }
 
 }
 
-.form__button{
+.form__button {
     cursor: pointer;
 }

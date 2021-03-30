@@ -35,6 +35,7 @@
     @include tablets {
         width: rem(130px);
         height: rem(130px);
+        margin-bottom: rem(40px);
     }
 }
 
@@ -51,6 +52,10 @@
     align-items: center;
 
     @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
         margin-left: 0;
     }
 }
@@ -60,6 +65,12 @@
     font-weight: bold;
     color: #292929;
     margin-bottom: rem(27px);
+
+    @include tablets {
+    margin-bottom: 0;
+      
+    }
+
 }
 
 .review__desc {
@@ -68,6 +79,7 @@
 
     @include tablets {
         width: 100%;
+        margin-bottom: 0;
     }
 }
 
@@ -75,4 +87,8 @@
     font-weight: bold;
     color: #292929;
     font-size: $baseFontSize;
+
+    @include phones{
+        font-weight: normal;
+    }
 }

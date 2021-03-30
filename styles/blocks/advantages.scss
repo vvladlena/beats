@@ -13,6 +13,11 @@
     padding: 0 3%;
     position: relative;
 
+    @include tablets {
+        padding: 0 1%;
+
+    }
+
     @include phones {
         margin-bottom: rem(25px);
         display: flex;
@@ -31,6 +36,7 @@
         @include phones {
             display: none;
         }
+
         @include tablets {
             display: none;
         }
@@ -54,8 +60,17 @@
     font-weight: bold;
     color: #292929;
 
+
+    // @include tablets {
+        font-size: 24px;
+
+    //     font-size: rem(24px);
+    // }
+
     @include phones {
         padding: 0 rem(16px);
+        // font-size: rem(24px);
+        font-size: 24px;
 
     }
 
@@ -87,6 +102,14 @@
 .advantage__desc {
     padding: 0 rem(16px);
     font-size: rem(16px);
+
+    @include tablets {
+        padding: 0;
+    }
+
+    @include phones{
+        padding: 0 rem(16px);
+    }
 
 }
 

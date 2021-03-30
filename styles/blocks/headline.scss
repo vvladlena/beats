@@ -8,10 +8,21 @@
 
 }
 
+
+.headline__title {
+    padding: 0 rem(1px);
+}
+
 .headline__subtitle {
     width: 50%;
     // padding: 0 rem(288px);
     font-size: rem(16px);
+
+    @include tablets {
+
+        width: 80%;
+
+    }
 
     @include phones {
         width: 100%;

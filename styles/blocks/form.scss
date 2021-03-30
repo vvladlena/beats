@@ -29,18 +29,17 @@
 .form__row {
     display: flex;
     margin-bottom: rem(11px);
-    // flex-wrap: wrap;
-    // flex-grow: 4;
-    // flex-basis: 125px;
-    
+
+    @include tablets {
+        margin-bottom: rem(24px);
+    }
 
 }
 
 .form__block {
     flex: 1;
     margin-right: rem(20px);
-    // flex-shrink: 1;
-    // flex-basis: 106px;
+
 
 
     &:last-child {
@@ -85,6 +84,9 @@
 
     @include phones {
         justify-content: center;
+        margin-bottom: rem(2px);
+
+
     }
 }
 
@@ -150,9 +152,7 @@
 
 }
 
-.form__block-comment {
-    margin-bottom: rem(27px);
-}
+
 
 
 .form__title {

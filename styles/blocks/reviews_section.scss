@@ -1,5 +1,11 @@
 .reviews-section {
     position: relative;
+    min-height: rem(652px);
+    // height: 100vh;
+    padding-top: rem(25px);
+    padding-bottom: rem(70px);
+    margin-bottom: rem(10px);
+
 
     &:before {
         content: url('../images/decor/ellipse.png');

@@ -3,6 +3,17 @@
     align-items: flex-start;
     min-height: rem(30px);
     justify-content: space-between;
+    margin-bottom: rem(40px);
+
+    @include tablets{
+        margin-bottom: rem(144px);
+    }
+
+    @include phones{
+        margin-bottom: rem(80px);
+
+    }
+
 }
 
 .logo {
