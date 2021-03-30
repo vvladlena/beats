@@ -4,17 +4,19 @@
     background: #181818;
     background-image: url('../images/decor/black.png');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: bottom center;
     background-size: 100% auto;
-    min-height: rem(652px);
+    
     // height: 100vh;
-    flex: 1;
+    // min-height: rem(1000px);
 
-    @include tablets{
-        padding-top: rem(25px);
-    padding-bottom: rem(70px);
-    margin-bottom: rem(10px);
-    }
+    // flex: 1;
+
+    // @include tablets{
+    //     padding-top: rem(25px);
+    // padding-bottom: rem(70px);
+    // margin-bottom: rem(10px);
+    // }
 
 
     &:before {
@@ -22,6 +24,11 @@
         position: absolute;
         left: 90%;
         top: rem(-25px);
+
+        @include phones {
+            left: 80%;
+
+        }
     }
 
 }

@@ -25,7 +25,15 @@
         left: 50%;
         transform: translateX(-50%);
         top: rem(-60px);
+
+        @include phones {
+            content: none;
+        }
     }
+}
+
+.section__title_review {
+    margin-bottom: rem(26px);
 }
 
 .review__avatar {
@@ -67,8 +75,8 @@
     margin-bottom: rem(27px);
 
     @include tablets {
-    margin-bottom: 0;
-      
+        margin-bottom: 0;
+
     }
 
 }
@@ -88,7 +96,7 @@
     color: #292929;
     font-size: $baseFontSize;
 
-    @include phones{
+    @include phones {
         font-weight: normal;
     }
 }

@@ -1,15 +1,12 @@
 .intro {
-    min-height: rem(652px);
 
-    // height: 100vh;
     position: relative;
     background-color: $lightGrey;
     padding-top: rem(25px);
     padding-bottom: rem(70px);
-    margin-bottom: rem(10px);
 
 
-   
+
 
     x &:after {
         @include tablets {
@@ -28,9 +25,7 @@
 
         }
 
-        @include phones {
 
-        }
     }
 
 
@@ -48,7 +43,17 @@
     background-size: 40% auto;
 
     @include tablets {
-        background-image: none;
+        //     background-image: none;
+        background-position: top 40px center;
+        background-size: 45% auto;
+
+    }
+
+    @include phones {
+        background-position: top 40px center;
+        background-size: 70% auto;
+
+
     }
 }
 
@@ -66,13 +71,13 @@
         text-align: center;
         margin-bottom: 0;
 
-        &:before {
-            content: url('../images/tablets/headphones.png');
-            margin-bottom: rem(68px);
-        }
+        // &:before {
+        //     content: url('../images/tablets/headphones.png');
+        //     margin-bottom: rem(68px);
+        // }
     }
 
-    @include phones{
+    @include phones {
         &:before {
             margin-bottom: rem(40px);
         }
@@ -89,7 +94,7 @@
     line-height: 1.1;
 
     @include tablets {
-    margin-bottom: rem(4px);
+        margin-bottom: rem(4px);
         padding: 0 5%;
     }
 

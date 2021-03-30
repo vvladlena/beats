@@ -1,6 +1,4 @@
 .bottom-section {
-    height: 100vh;
-    // min-height: rem(652px);
     position: relative;
     display: flex;
     align-items: center;
@@ -9,41 +7,54 @@
 }
 
 .map {
-    position: absolute;
-    // width: 100%;
+    width: 100%;
+    height: 100%;
+
+    &__img {
+        object-fit: cover;
+        height: 100%;
+    }
 
 }
+
+
 
 .footer {
     width: 100%;
     position: absolute;
     display: flex;
-    align-items: center;
     bottom: 0;
-    height: rem(80px);
+    left: 0;
+    right: 0;
+    height: rem(87px);
     background: #fff;
 
-}
 
-// .map__img{
-//     @include phones {
-//         // position: absolute;
-//         min-height: 100%;
-//         // width: 100%;
-//     }
-// }
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-.footer__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: rem(15px);
+        @include phones {
+            flex-direction: column;
+        }
 
-    @include phones {
-        flex-direction: column;
     }
 
+    @include tablets {
+        height: rem(107px);
+    }
+
+    @include phones {
+        height: rem(151px);
+
+    }
+
+
 }
+
+
+
 
 .contacts-info {
     color: #292929;
@@ -58,7 +69,7 @@
 
 .adress {
 
-    @include tablets{
+    @include tablets {
         font-size: rem(21px);
     }
 
@@ -93,4 +104,3 @@
     }
 
 }
-
