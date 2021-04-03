@@ -21,7 +21,7 @@
                                 <use xlink:href="images/icons/sprite.svg#logo"></use>
                             </svg>
                         </a>
-                        <nav class="general-menu">
+                        <nav class="general-menu general-menu_top">
                             <ul class="general-menu__list">
                                 <li class="general-menu__item">
                                     <a href="#" class="general-menu__link">О нас</a>
@@ -57,7 +57,7 @@
                             <span class="contacts__text">8 800 903 90 90</span>
                         </a>
 
-                        <a href="" class="hamburger">
+                        <a href="" class="hamburger" id="hamburger">
                             <span class="hamburger__plank"></span>
                             <span class="hamburger__plank"></span>
                             <span class="hamburger__plank"></span>
@@ -183,6 +183,99 @@
                     </ul>
                 </div>
             </section>
+
+
+
+            <section class="section slider-section">
+                <div class="container">
+                    <div class="slider">
+
+                        <!-- <a href="#" class="arrow arrow_left">
+                            <img src="./images/slider/left.png" alt="" class="arrow__img">
+                        </a> -->
+                        <div class="slider__image">
+                            <img src="./images/slider/headphones.png" alt="" class="slider__image-img">
+                        </div>
+
+                        <div class="slider__content">
+                            <div class="dropdown-block">
+                                <div class="dropdown-block__link">
+                                    <img src="./images/slider/options.png" alt="" class="slider__content-img">
+                                </div>
+                                <div class="specification">
+                                    <ul class="specification__list">
+                                        <li class="specification__image">
+                                            <img src="./images/slider/bluetooth.png" alt="" class="specification__icon">
+                                        </li>
+                                        <li class="specification__name">Bluetooth</li>
+                                        <li class="specification__value">4.0</li>
+                                    </ul>
+                                    <ul class="specification__list">
+                                        <li class="specification__image">
+                                            <img src="./images/slider/distance.png" alt="" class="specification__icon">
+                                        </li>
+                                        <li class="specification__name">Дальность</li>
+                                        <li class="specification__value">12 м</li>
+                                    </ul>
+                                    <ul class="specification__list">
+                                        <li class="specification__image">
+                                            <img src="./images/slider/charge.png" alt="" class="specification__icon">
+                                        </li>
+                                        <li class="specification__name">Зарядка</li>
+                                        <li class="specification__value">3 ч</li>
+                                    </ul>
+                                    <ul class="specification__list">
+                                        <li class="specification__image">
+                                            <img src="./images/slider/kg.png" alt="" class="specification__icon">
+                                        </li>
+                                        <li class="specification__name">Вес</li>
+                                        <li class="specification__value">215 гр</li>
+                                    </ul>
+                                    <ul class="specification__list">
+                                        <li class="specification__image">
+                                            <img src="./images/slider/garanti.png" alt="" class="specification__icon">
+                                        </li>
+                                        <li class="specification__name">Гарантия</li>
+                                        <li class="specification__value">1 год</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="slider__tittle">beats solo 3. цвет «атласное серебро»</h4>
+                            <div class="slider__description">
+                                <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и
+                                    поднесите
+                                    к своему iPhone — они мгновенно подключатся к нему.</p>
+                            </div>
+                            <div class="slider__options option">
+                                <ul class="option__list">
+                                    <li class="option__item">
+                                        <div class="option__name">Зарядка</div>
+                                        <div class="option__value">2 часа</div>
+                                    </li>
+                                    <li class="option__item">
+                                        <div class="option__name">Вес</div>
+                                        <div class="option__value">215 грамм</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider__bottom">
+                                <div class="slider__bottom__price">14 990 ₽</div>
+                                <div class="slider__button">
+                                    <a href="#" class="button button_style_common">ЗАКАЗАТЬ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="#" class="arrow arrow_right">
+                            <img src="./images/slider/right.png" alt="" class="arrow__img">
+                        </a> -->
+                    </div>
+                </div>
+            </section>
+
+
+
+
             <section class="section reviews-section">
                 <div class="container">
                     <h2 class="section__title section__title_review">Отзывы</h2>
@@ -389,6 +482,46 @@
     </nav>
 
 
+
+    <script type="html/template" id="overlayTemplate">
+
+
+
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <a href="#" class="fullscreen-menu__close" id="close">
+            <img src="./images/decor/close.png" alt="" class="close__img">
+        </a>
+        <nav class="general-menu general-menu_hidden">
+            <ul class="general-menu__list">
+                <li class="general-menu__item">
+                    <a href="#" class="general-menu__link">О нас</a>
+                </li>
+                <li class="general-menu__item">
+                    <a href="#" class="general-menu__link">Наушники</a>
+                </li>
+                <li class="general-menu__item">
+                    <a href="#" class="general-menu__link">Команда</a>
+                </li>
+                <li class="general-menu__item">
+                    <a href="#" class="general-menu__link">Цвета</a>
+                </li>
+                <li class="general-menu__item">
+                    <a href="#" class="general-menu__link">Отзывы</a>
+                </li>
+                <li class="general-menu__item">
+                    <a href="#" class="general-menu__link">Как мы работаем</a>
+                </li>
+                <li class="general-menu__item">
+                    <a href="#" class="general-menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    </script>
+
+    <script src="./js/hidden_menu.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,143 @@
+.slider-section {
+    position: relative;
+    background-color: $lightGrey;
+    padding-top: rem(25px);
+    padding-bottom: rem(70px);
+
+
+    &:before {
+        content: url('../images/decor/blackrectangle.png');
+        position: absolute;
+        right: 10%;
+        bottom: rem(-25px);
+    }
+}
+
+
+.slider {
+    display: flex;
+    align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+        // justify-content: space-around;
+    }
+
+    &__image {
+        width: 70%;
+        margin-right: rem(59px);
+
+        @include tablets {
+            width: 50%;
+            margin-right: 0;
+            margin-bottom: rem(15px);
+        }
+
+        @include phones {
+            width: 70%;
+        }
+    }
+
+    &__content {
+        height: rem(490px);
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include tablets {
+            height: rem(360px);
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+    }
+
+    &__content-img {
+        width: rem(91px);
+        height: rem(91px);
+
+    }
+
+
+
+
+    &__tittle {
+        font-size: rem(36px);
+        text-transform: uppercase;
+        color: #292929;
+        font-weight: bold;
+        line-height: 1.2;
+
+        @include tablets {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        @include phones {
+            padding: 0 rem(30px);
+        }
+    }
+
+    &__description {
+        font-size: rem(16px);
+        padding: 0 50px 0 0;
+
+        @include tablets {
+            text-align: center;
+            padding: 0 rem(50px);
+        }
+
+        @include phones {
+            padding: 0 rem(44px);
+
+        }
+    }
+}
+
+.option {
+
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin-right: rem(60px);
+
+        &:last-child {
+            margin-right: 0;
+
+        }
+
+    }
+
+    &__name {
+        font-size: rem(16px);
+    }
+
+    &__value {
+        font-size: rem(18px);
+        font-weight: bold;
+        color: #000000;
+    }
+
+}
+
+.slider__bottom {
+    display: flex;
+    align-items: center;
+
+    &__price {
+        margin-right: rem(13px);
+        font-size: rem(36px);
+        color: #151515;
+
+        @include tablets {
+            margin-right: rem(50px);
+        }
+    }
+
+}

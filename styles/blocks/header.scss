@@ -5,11 +5,11 @@
     justify-content: space-between;
     margin-bottom: rem(40px);
 
-    @include tablets{
+    @include tablets {
         margin-bottom: rem(144px);
     }
 
-    @include phones{
+    @include phones {
         margin-bottom: rem(80px);
 
     }
@@ -48,9 +48,14 @@
     font-size: $baseFontSize;
     font-family: $secondaryFontFamily;
     margin: 0 rem(20px);
+}
 
-    @include tablets {
-        display: none;
+
+.general-menu_top {
+    .general-menu__list {
+        @include tablets {
+            display: none;
+        }
     }
 }
 
