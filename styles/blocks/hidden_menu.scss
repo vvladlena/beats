@@ -6,13 +6,13 @@
     bottom: 0;
     background: #313131;
     z-index: 1000;
-    // overflow: hidden;
 }
 
 
 .fullscreen-menu {
     color: #fff;
     position: relative;
+
 
 }
 
@@ -31,17 +31,17 @@
 
 
 .general-menu_hidden {
-    padding: rem(135px) 0 0;
-
+    padding: rem(135px) 0;
+    height: 100vh;
 
 
     .general-menu__list {
+        height: 100%;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
+        justify-content: space-around;
         font-size: rem(36px);
         font-family: $baseFontFamily;
+        flex-wrap: nowrap;
 
         .general-menu__item {
 

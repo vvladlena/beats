@@ -130,13 +130,25 @@
     display: flex;
     align-items: center;
 
+
     &__price {
         margin-right: rem(13px);
         font-size: rem(36px);
         color: #151515;
+        white-space: nowrap;
+        font-size: rem(36px);
 
         @include tablets {
             margin-right: rem(50px);
+            font-size: rem(40px);
+
+        }
+
+        @include phones {
+            margin-right: rem(5px);
+            justify-content: center;
+            font-size: rem(32px);
+
         }
     }
 

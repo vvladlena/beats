@@ -18,11 +18,12 @@ body {
     color: #666666;
 }
 
-.wraper {
+.wrapper {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    overflow: hidden;
+    overflow: auto;
 
 }
 

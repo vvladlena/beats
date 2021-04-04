@@ -1,38 +1,47 @@
 const openButton = document.querySelector("#hamburger");
-        const body = document.body;
-        const fullscreenMenu = document.querySelector("#fullscreenMenu");
+const body = document.body;
+const fullscreenMenu = document.querySelector("#fullscreenMenu");
 
-        const successModal = createModal("The message has been sent, thank you!");
+const myWrapper = document.querySelector(".wrapper");
 
-
-        openButton.addEventListener("click", e => {
-            body.appendChild(successModal);
-
-            e.preventDefault();
-
-        });
-
-        function createModal(content) {
-            const overlayElement = document.createElement("div");
-            overlayElement.classList.add("overlay");
+const successModal = createModal("The message has been sent, thank you!");
 
 
-            const template = document.querySelector("#overlayTemplate");
+openButton.addEventListener("click", e => {
+    body.appendChild(successModal);
 
-            overlayElement.innerHTML = template.innerHTML;
-            overlayElement.addEventListener("click", e => {
-                if (e.target == overlayElement) {
-                    closeElement.click();
-                }
-            })
-
-            const closeElement = overlayElement.querySelector("#close");
-            closeElement.addEventListener("click", e => {
-                e.preventDefault();
-                body.removeChild(overlayElement);
-            })
+    myWrapper.style.overflow = `hidden`;
 
 
-            return overlayElement;
 
+    e.preventDefault();
+
+});
+
+function createModal(content) {
+    const overlayElement = document.createElement("div");
+    overlayElement.classList.add("overlay");
+
+
+    const template = document.querySelector("#overlayTemplate");
+
+    overlayElement.innerHTML = template.innerHTML;
+    overlayElement.addEventListener("click", e => {
+        if (e.target == overlayElement) {
+            closeElement.click();
         }
+    })
+
+    const closeElement = overlayElement.querySelector("#close");
+    closeElement.addEventListener("click", e => {
+        e.preventDefault();
+        body.removeChild(overlayElement);
+        
+        myWrapper.style.overflow = `auto`;
+
+    })
+
+
+    return overlayElement;
+
+}

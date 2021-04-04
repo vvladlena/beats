@@ -319,11 +319,12 @@ body {
   margin: 0 auto;
   color: #666666; }
 
-.wraper {
+.wrapper {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  overflow: hidden; }
+  overflow: auto; }
 
 a {
   color: inherit; }
@@ -1150,13 +1151,15 @@ img {
     height: 1.1111111111rem; }
 
 .general-menu_hidden {
-  padding: 7.5rem 0 0; }
+  padding: 7.5rem 0;
+  height: 100vh; }
   .general-menu_hidden .general-menu__list {
+    height: 100%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 2rem;
-    font-family: "Play", sans-serif; }
+    font-family: "Play", sans-serif;
+    flex-wrap: nowrap; }
     .general-menu_hidden .general-menu__list .general-menu__item {
       margin: 0; }
 
@@ -1247,10 +1250,18 @@ img {
   .slider__bottom__price {
     margin-right: 0.7222222222rem;
     font-size: 2rem;
-    color: #151515; }
+    color: #151515;
+    white-space: nowrap;
+    font-size: 2rem; }
     @media screen and (max-width: 768px) {
       .slider__bottom__price {
-        margin-right: 2.7777777778rem; } }
+        margin-right: 2.7777777778rem;
+        font-size: 2.2222222222rem; } }
+    @media screen and (max-width: 480px) {
+      .slider__bottom__price {
+        margin-right: 0.2777777778rem;
+        justify-content: center;
+        font-size: 1.7777777778rem; } }
 
 .dropdown-block {
   position: relative;
@@ -1262,8 +1273,7 @@ img {
 
 .dropdown-block:hover .specification {
   opacity: .9;
-  visibility: visible;
-  margin-left: 5.0555555556rem; }
+  visibility: visible; }
 
 .specification {
   background: #ffffff;
@@ -1274,20 +1284,23 @@ img {
   font-size: 0.8888888889rem;
   padding: 1.4444444444rem;
   border-radius: 4px;
-  display: flex;
   position: absolute;
-  flex-direction: column;
-  justify-content: space-between;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.7s; }
-  .specification__image {
-    margin-right: 0.6666666667rem; }
   .specification__list {
+    height: 100%;
+    width: 100%;
     display: flex;
-    align-items: center; }
+    flex-direction: column;
+    justify-content: space-between; }
+  .specification__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
   .specification__icon {
     width: 1.7777777778rem;
-    height: 1.7777777778rem; }
+    height: 1.7777777778rem;
+    margin-right: 0.6666666667rem; }
   .specification__value {
     margin-left: auto; }
