@@ -1182,15 +1182,18 @@ img {
       flex-direction: column; } }
   .slider__image {
     width: 70%;
-    margin-right: 3.2777777778rem; }
+    margin-right: 3.2777777778rem;
+    padding-left: 2.1111111111rem; }
     @media screen and (max-width: 768px) {
       .slider__image {
-        width: 50%;
+        width: auto;
+        max-width: 306px;
         margin-right: 0;
-        margin-bottom: 0.8333333333rem; } }
+        margin-bottom: 0.8333333333rem;
+        padding: 0; } }
     @media screen and (max-width: 480px) {
       .slider__image {
-        width: 70%; } }
+        padding: 0; } }
   .slider__content {
     height: 27.2222222222rem;
     width: 60%;
@@ -1270,6 +1273,14 @@ img {
   height: 100%;
   align-items: center;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .arrows {
+      align-items: flex-start;
+      justify-content: space-around;
+      top: 7.7777777778rem; } }
+  @media screen and (max-width: 480px) {
+    .arrows {
+      justify-content: space-between; } }
 
 .dropdown-block {
   position: relative;
@@ -1312,3 +1323,54 @@ img {
     margin-right: 0.6666666667rem; }
   .specification__value {
     margin-left: auto; }
+
+.team {
+  width: 100%; }
+  .team__list {
+    display: flex;
+    width: 100%; }
+  .team__item {
+    flex: 1;
+    padding-right: 3%;
+    position: relative; }
+    .team__item:last-child {
+      padding-right: 0; }
+
+.member {
+  display: flex;
+  flex-direction: column; }
+  .member__avatar {
+    margin-bottom: 1.3888888889rem; }
+  .member__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.6111111111rem; }
+    .member__link-top {
+      display: none; }
+    .member__link-name {
+      font-weight: bold;
+      color: #292929;
+      margin-right: 0.2222222222rem; }
+  .member__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8888888889rem;
+    height: 0;
+    overflow: hidden; }
+    .member__description-position {
+      color: #000000; }
+
+.member_active .member__link-top {
+  display: inline-block; }
+
+.member_active .member__link-down {
+  display: none; }
+
+.member_active .member__description {
+  height: 100px;
+  overflow: visible; }

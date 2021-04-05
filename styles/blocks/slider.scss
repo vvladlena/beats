@@ -26,15 +26,21 @@
     &__image {
         width: 70%;
         margin-right: rem(59px);
+        padding-left: rem(38px);
 
         @include tablets {
-            width: 50%;
+            width: auto;
+            max-width: 306px;
             margin-right: 0;
             margin-bottom: rem(15px);
+            padding: 0;
+
         }
 
         @include phones {
-            width: 70%;
+            // max-width: 70%;
+            padding: 0;
+
         }
     }
 
@@ -162,5 +168,16 @@
     height: 100%;
     align-items: center;
     justify-content: space-between;
-}
 
+    @include tablets{
+    align-items: flex-start;
+    justify-content: space-around;
+    top: rem(140px);
+    }
+
+    @include phones{
+    justify-content: space-between;
+
+
+    }
+}
