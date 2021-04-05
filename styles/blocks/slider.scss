@@ -30,7 +30,7 @@
 
         @include tablets {
             width: auto;
-            max-width: 306px;
+            max-width: rem(306px);
             margin-right: 0;
             margin-bottom: rem(15px);
             padding: 0;
@@ -177,7 +177,5 @@
 
     @include phones{
     justify-content: space-between;
-
-
     }
 }
