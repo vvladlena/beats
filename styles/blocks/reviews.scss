@@ -1,10 +1,16 @@
-.reviews__display {
+.reviews__list {
+    min-height: rem(280px);
     background: #F8FAF9;
+
+}
+
+.reviews__item {
     display: flex;
     padding: rem(42px);
     overflow: hidden;
-    position: relative;
+    position: absolute;
     margin-bottom: rem(15px);
+    opacity: 0;
 
     @include tablets {
         flex-direction: column;
@@ -30,6 +36,11 @@
             content: none;
         }
     }
+}
+
+.reviews__item.review_active {
+    position: static;
+    opacity: 1;
 }
 
 .section__title_review {

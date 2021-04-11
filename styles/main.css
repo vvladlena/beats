@@ -732,20 +732,24 @@ img {
     left: 10%;
     bottom: -1.3888888889rem; }
 
-.reviews__display {
-  background: #F8FAF9;
+.reviews__list {
+  min-height: 15.5555555556rem;
+  background: #F8FAF9; }
+
+.reviews__item {
   display: flex;
   padding: 2.3333333333rem;
   overflow: hidden;
-  position: relative;
-  margin-bottom: 0.8333333333rem; }
+  position: absolute;
+  margin-bottom: 0.8333333333rem;
+  opacity: 0; }
   @media screen and (max-width: 768px) {
-    .reviews__display {
+    .reviews__item {
       flex-direction: column;
       align-items: center;
       text-align: center;
       justify-content: center; } }
-  .reviews__display:before {
+  .reviews__item:before {
     content: '';
     display: block;
     background: #ffffff;
@@ -757,8 +761,12 @@ img {
     transform: translateX(-50%);
     top: -3.3333333333rem; }
     @media screen and (max-width: 480px) {
-      .reviews__display:before {
+      .reviews__item:before {
         content: none; } }
+
+.reviews__item.review_active {
+  position: static;
+  opacity: 1; }
 
 .section__title_review {
   margin-bottom: 1.4444444444rem; }
@@ -921,6 +929,12 @@ img {
     border-color: #E01F3D;
     outline: 0; }
 
+.form__input.input-error {
+  border-color: #ff69b4; }
+
+.form__input_textarea.input-error {
+  border-color: #ff69b4; }
+
 .form__controls {
   display: flex;
   flex-wrap: wrap;
@@ -979,6 +993,9 @@ img {
 .form__buttons {
   display: flex;
   justify-content: center; }
+
+.error {
+  color: red; }
 
 .fixed-menu {
   position: fixed;
@@ -1174,6 +1191,11 @@ img {
     right: 10%;
     bottom: -1.3888888889rem; }
 
+.bx-wrapper {
+  border: 0;
+  background: transparent;
+  box-shadow: none; }
+
 .slider {
   display: flex;
   align-items: center; }
@@ -1333,12 +1355,24 @@ img {
 .team {
   width: 100%; }
   .team__list {
-    display: flex;
+    display: none;
     width: 100%; }
+    @media screen and (max-width: 768px) {
+      .team__list {
+        display: flex;
+        flex-direction: column; } }
+    .team__list_desktop {
+      display: flex; }
+      @media screen and (max-width: 768px) {
+        .team__list_desktop {
+          display: none; } }
   .team__item {
     flex: 1;
     padding-right: 3%;
     position: relative; }
+    @media screen and (max-width: 768px) {
+      .team__item {
+        padding-right: 0; } }
     .team__item:last-child {
       padding-right: 0; }
 
@@ -1359,17 +1393,29 @@ img {
       font-weight: bold;
       color: #292929;
       margin-right: 0.2222222222rem; }
-  .member__description-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 0.8888888889rem;
+  .member__description {
     height: 0;
-    overflow: hidden; }
-    .member__description-block-position {
+    overflow: hidden;
+    transition: height .3s; }
+    .member__description-position {
       color: #000000; }
+      @media screen and (max-width: 768px) {
+        .member__description-position {
+          font-weight: bold; } }
+    .member__description-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 0.8888888889rem;
+      height: 100px; }
+      @media screen and (max-width: 768px) {
+        .member__description-block {
+          height: 450px; } }
+    @media screen and (max-width: 768px) {
+      .member__description-task {
+        padding: 0 160px; } }
 
 .member_active .member__link-top {
   display: inline-block; }
@@ -1377,6 +1423,23 @@ img {
 .member_active .member__link-down {
   display: none; }
 
-.member_active .member__description {
-  height: 100px;
-  overflow: visible; }
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none; }
+  .modal__container {
+    width: 17.1666666667rem;
+    height: 9.7777777778rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #ffffff;
+    z-index: 100; }
+  .modal__content {
+    text-align: center;
+    color: #000000; }
+
+.error-modal .modal__container .modal__content {
+  color: red; }

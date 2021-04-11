@@ -13,6 +13,11 @@
     }
 }
 
+.bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
 
 .slider {
     display: flex;
@@ -169,20 +174,21 @@
     align-items: center;
     justify-content: space-between;
 
-    @include tablets{
-    align-items: flex-start;
-    justify-content: space-around;
-    top: rem(140px);
+    @include tablets {
+        align-items: flex-start;
+        justify-content: space-around;
+        top: rem(140px);
     }
 
-    @include phones{
-    justify-content: space-between;
+    @include phones {
+        justify-content: space-between;
     }
 }
 
-.arrow_right{
+.arrow_right {
     margin-left: rem(120px);
 }
-.arrow_left{
+
+.arrow_left {
     margin-right: rem(120px);
 }
